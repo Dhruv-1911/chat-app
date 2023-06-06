@@ -1,87 +1,9 @@
-/* .logo {
+ .logo {
     height: 50px;
     margin: 0 auto;
     display: block;
 }
 
-body {
-    height: 100vh;
-    box-sizing: border-box;
-    background-image: linear-gradient(to left bottom, #051937, #25385f, #445b8a, #6580b7, #86a8e7);
-}
-
-.container {
-    max-width: 500px;
-    margin: auto;
-    background-color: #bcd8cf;
-    height: 70vh;
-    overflow-y: auto;
-    margin: 5px auto;
-    border-radius: 10px
-}
-
-.container::-webkit-scrollbar {
-    display: none;
-}
-
-.message {
-    background-color: cadetblue;
-    max-width: 230px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid;
-    margin: 3px 5px;
-}
-
-#right {
-    float: right;
-    clear: both;
-    margin: 0px;
-    font-size: medium;
-    font-weight: 100;
-    margin: 3px 5px;
-}
-
-#left {
-    float: left;
-    clear: both;
-    margin: 0px;
-    font-size: medium;
-    font-weight: 100;
-    margin: 3px 5px;
-}
-
-.Right {
-    float: right;
-    clear: both;
-    background-color: #5f9ea066;
-}
-
-.Left {
-    float: left;
-    clear: both;
-    background-color: #48888a;
-}
-
-.send {
-    text-align: center;
-}
-
-#input {
-    border-radius: 5px;
-    border: none;
-    height: 30px;
-    width: 445px;
-    outline: none;
-}
-
-#button {
-    padding: 2px;
-    border: none;
-    border-radius: 10px;
-    width: 50px;
-    height: 28px;
-} */
 
 * {
     padding: 0;
@@ -94,7 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #F8F8F8;
+     background-image: linear-gradient(to left bottom, #051937, #25385f, #445b8a, #6580b7, #86a8e7);
 }
 section.chat__section {
     width: 800px;
@@ -107,6 +29,7 @@ section.chat__section {
     background: #f1f1f1;
     display: flex;
     align-items: center;
+    background-color: cadetblue;
 }
 .brand h1 {
     text-transform: uppercase;
@@ -121,6 +44,7 @@ section.chat__section {
     flex-direction: column;
     overflow-y: auto;
     padding-top: 40px;
+    background-color: #bcd8cf
 }
 textarea {
     width: 100%;
@@ -138,13 +62,12 @@ textarea {
     max-width: 300px;
     position: relative;
 }
-.incoming {
-    background: #8F8BE8;
-    color: #fff;  
+.incoming {  
+    background-color: #5f9ea066;
+    color: #000;  
 }
 .outgoing {
-    background: #e9eafd;
-    color: #787986;
+    background-color: #5f9ea066;
     margin-left: auto;
 }
 .message h4 {
