@@ -1,32 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chat APP</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-
-<body>
-    <nav>
-        <img class="logo" src="logo.png" alt="logo">
-    </nav>
-    <div class="container"></div>
-    
-    <div class="send">
-        <form action="#" class="send_container">
-            <input type="text" name="input" id="input">
-            <button id="button" type="submit">send</button>
-        </form>
-    </div>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/client.js"></script>
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,8 +14,9 @@
             <img class="logo" src="logo.png" alt="logo">
         </div>
         <div class="message__area"></div>
-        <div>
+        <div class="container">
             <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+            <button  id="send-location">Send Location</button>
         </div>
     </section>
     <script src="/socket.io/socket.io.js"></script>
@@ -52,3 +24,4 @@
 </body>
 
 </html>
+

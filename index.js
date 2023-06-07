@@ -1,3 +1,4 @@
+const { log } = require('console')
 const express = require('express')
 const app = express()
 const http = require('http').createServer(app)
@@ -19,5 +20,9 @@ io.on("connection", (socket) => {
     console.log('socket connected........'); 
     socket.on('message',(msg)=>{
         socket.broadcast.emit('message',msg)
+    })
+
+   socket.on("creategeolocation",(location)=>{
+        socket.emit("newmessage",location)
     })
   });
